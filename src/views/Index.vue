@@ -11,7 +11,9 @@
         <!-- 内容 -->
         <main>
             <div class="mainBox">
-                <router-view style="width: 1195px;height: 100%;background-color: #fff;" />
+                <div class="mianContent">
+                    <router-view style="width: 1195px;height: 100%;background-color: #fff;" />
+                </div>
                 <div class="mainNav">
                     <ul>
                         <li class="active">
@@ -78,6 +80,11 @@
 </template>
 <script>
 export default {
+    watch: {
+        '$route' (to, from) {
+            console.log(to, from);
+        }
+    },
     methods: {
         onSearch (value) {
             console.log(value);
@@ -107,21 +114,30 @@ export default {
         }
     }
     main {
+        position: relative;
         width: 100%;
-        height: calc(100vh - 100px - 140px);
+        height: auto;
+        min-height: 697px;
         background-image: linear-gradient(#bd1a2d, #fff, #fff);
         .mainBox {
-            position: relative;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
             width: 1355px;
             height: 100%;
-            margin: 0 auto;
-            overflow: auto;
-            &::-webkit-scrollbar {display:none}
+            .mianContent {
+                height: 100%;
+                overflow: auto;
+                &::-webkit-scrollbar {display:none}
+            }
             .mainNav {
                 border-left: 1px solid #bd1a2d;
-                position: fixed;
-                top: 10.6%;
-                right: 15.3%;
+                // position: fixed;
+                // top: 10.6%;
+                // right: 15.3%;
+                position: absolute;
+                top: 0;
+                right: -1px;
                 width: 160px;
                 height: 697px;
                 background-color: #f1f1f1;
@@ -169,8 +185,6 @@ export default {
         }
     }
     #footer {
-        position: absolute;
-        bottom: 0;
         height: 140px;
     }
 </style>
