@@ -1,5 +1,5 @@
 <template>
-    <div style="min-width: 1920px;height: 100%;position: relative;">
+    <div style="min-width: 1920px;height: 100%;position: relative;overflow-x: hidden;">
         <!-- 头部 -->
         <div class="top">
             <div class="content">
@@ -14,7 +14,7 @@
                 <router-view style="width: 1195px;height: 100%;background-color: #fff;" />
                 <div class="mainNav">
                     <ul>
-                        <li>
+                        <li class="active">
                             <div>
                                 <a-icon type="home" />
                             </div>
@@ -23,20 +23,36 @@
                             </span>
                         </li>
                         <li>
-                            <div></div>
-                            <span></span>
+                            <div>
+                                <a-icon type="star" />
+                            </div>
+                            <span>
+                                政务公开
+                            </span>
                         </li>
                         <li>
-                            <div></div>
-                            <span></span>
+                            <div>
+                                <a-icon type="heart" />
+                            </div>
+                            <span>
+                                财政服务
+                            </span>
                         </li>
                         <li>
-                            <div></div>
-                            <span></span>
+                            <div>
+                                <a-icon type="message" />
+                            </div>
+                            <span>
+                                政民互动
+                            </span>
                         </li>
                         <li>
-                            <div></div>
-                            <span></span>
+                            <div>
+                                <a-icon type="rest" />
+                            </div>
+                            <span>
+                                环境质量
+                            </span>
                         </li>
                         <router-link to="Interaction">
                             <li>
@@ -92,7 +108,6 @@ export default {
     }
     main {
         width: 100%;
-        height: calc(100vh - 100px - 140px);
         background-image: linear-gradient(#bd1a2d, #fff, #fff);
         .mainBox {
             position: relative;
@@ -112,8 +127,10 @@ export default {
                     margin: 0;
                     height: 100%;
                     li {
-                        overflow: hidden;
-                        display: block;
+                        list-style: none;
+                        position: relative;
+                        float: left;
+                        width: 100%;
                         height: calc(100% / 7);
                         border-bottom: 1px solid #c6c6c6;
                         color: #bd1a2d;
@@ -129,13 +146,26 @@ export default {
                             font-size: 20px;
                         }
                     }
+                    .active {
+                        background-color: #ac1325;
+                        color: #fff;
+                        &::before {
+                            content: '';
+                            position: absolute;
+                            left: -82px;
+                            width: 0;
+                            height: 0;
+                            border-top: 50px solid transparent;
+                            border-right: 30px solid #ac1325;
+                            border-bottom: 50px solid transparent;
+                            border-left: 50px solid transparent;
+                        }
+                    }
                 }
             }
         }
     }
     #footer {
-        position: absolute;
-        bottom: 0;
         height: 140px;
     }
 </style>
