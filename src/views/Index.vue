@@ -15,8 +15,12 @@
                 <div class="mainNav">
                     <ul>
                         <li>
-                            <div></div>
-                            <span></span>
+                            <div>
+                                <a-icon type="home" />
+                            </div>
+                            <span>
+                                首页
+                            </span>
                         </li>
                         <li>
                             <div></div>
@@ -92,6 +96,7 @@ export default {
             height: 100%;
             margin: 0 auto;
             .mainNav {
+                border-left: 1px solid #bd1a2d;
                 position: absolute;
                 top: 0;
                 right: -1px;
@@ -101,12 +106,23 @@ export default {
                 ul {
                     padding: 0;
                     margin: 0;
+                    height: 100%;
                     li {
+                        overflow: hidden;
                         display: block;
-                        height: 99.5px;
+                        height: calc(100% / 7);
                         border-bottom: 1px solid #c6c6c6;
+                        color: #bd1a2d;
+                        text-align: center;
+                        font-size: 26px;
                         &:last-child {
                             border-bottom: none;
+                        }
+                        div {
+                            margin-top: 10px;
+                        }
+                        span {
+                            font-size: 20px;
                         }
                     }
                 }
