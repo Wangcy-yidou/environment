@@ -16,54 +16,64 @@
                 </div>
                 <div class="mainNav">
                     <ul>
-                        <li class="active">
-                            <div>
-                                <a-icon type="home" />
-                            </div>
-                            <span>
-                                首页
-                            </span>
-                        </li>
-                        <li>
-                            <div>
-                                <a-icon type="star" />
-                            </div>
-                            <span>
-                                政务公开
-                            </span>
-                        </li>
-                        <li>
-                            <div>
-                                <a-icon type="heart" />
-                            </div>
-                            <span>
-                                财政服务
-                            </span>
-                        </li>
-                        <li>
-                            <div>
-                                <a-icon type="message" />
-                            </div>
-                            <span>
-                                政民互动
-                            </span>
-                        </li>
-                        <li>
-                            <div>
-                                <a-icon type="rest" />
-                            </div>
-                            <span>
-                                环境质量
-                            </span>
-                        </li>
-                        <router-link to="Interaction">
+                        <router-link to="index">
+                            <li :class="{active: $route.name === 'index'}">
+                                <div>
+                                    <a-icon type="home" />
+                                </div>
+                                <span>
+                                    首页
+                                </span>
+                            </li>
+                        </router-link>
+                        <router-link to="">
                             <li>
+                                <div>
+                                    <a-icon type="star" />
+                                </div>
+                                <span>
+                                    政务公开
+                                </span>
+                            </li>
+                        </router-link>
+                        <router-link to="">
+                            <li>
+                                <div>
+                                    <a-icon type="heart" />
+                                </div>
+                                <span>
+                                    财政服务
+                                </span>
+                            </li>
+                        </router-link>
+                        <router-link to="">
+                            <li>
+                                <div>
+                                    <a-icon type="message" />
+                                </div>
+                                <span>
+                                    政民互动
+                                </span>
+                            </li>
+                        </router-link>
+                        <router-link to="">
+                            <li>
+                                <div>
+                                    <a-icon type="rest" />
+                                </div>
+                                <span>
+                                    环境质量
+                                </span>
+                            </li>
+                        </router-link>
+                        <router-link to="interaction">
+                            <li :class="{active: $route.name === 'interaction'}">
                                 <div><a-icon type="message" /></div>
                                 <span>政民互动</span>
                             </li>
                         </router-link>
-                        <router-link to="Special">
-                            <li>
+                        <router-link to="special">
+                            <li :class="{active: $route.name === 'special'}">
                                 <div><a-icon type="snippets" /></div>
                                 <span>专题专栏</span>
                             </li>
@@ -145,39 +155,41 @@ export default {
                     padding: 0;
                     margin: 0;
                     height: 100%;
-                    li {
-                        list-style: none;
-                        position: relative;
-                        float: left;
-                        width: 100%;
-                        height: calc(100% / 7);
-                        border-bottom: 1px solid #c6c6c6;
-                        color: #bd1a2d;
-                        text-align: center;
-                        font-size: 26px;
-                        &:last-child {
+                    a {
+                        &:last-child li {
                             border-bottom: none;
                         }
-                        div {
-                            margin-top: 10px;
+                        li {
+                            list-style: none;
+                            position: relative;
+                            float: left;
+                            width: 100%;
+                            height: calc(100% / 7);
+                            border-bottom: 1px solid #c6c6c6;
+                            color: #bd1a2d;
+                            text-align: center;
+                            font-size: 26px;
+                            div {
+                                margin-top: 10px;
+                            }
+                            span {
+                                font-size: 20px;
+                            }
                         }
-                        span {
-                            font-size: 20px;
-                        }
-                    }
-                    .active {
-                        background-color: #ac1325;
-                        color: #fff;
-                        &::before {
-                            content: '';
-                            position: absolute;
-                            left: -82px;
-                            width: 0;
-                            height: 0;
-                            border-top: 50px solid transparent;
-                            border-right: 30px solid #ac1325;
-                            border-bottom: 50px solid transparent;
-                            border-left: 50px solid transparent;
+                        .active {
+                            background-color: #ac1325;
+                            color: #fff;
+                            &::before {
+                                content: '';
+                                position: absolute;
+                                left: -82px;
+                                width: 0;
+                                height: 0;
+                                border-top: 50px solid transparent;
+                                border-right: 30px solid #ac1325;
+                                border-bottom: 50px solid transparent;
+                                border-left: 50px solid transparent;
+                            }
                         }
                     }
                 }

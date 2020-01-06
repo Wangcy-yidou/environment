@@ -10,7 +10,7 @@
                                 <li>
                                     <span class="spot"></span>
                                     <span class="title">
-                                        东城区持续推进老旧柴油货车淘汰更新，累计检查和处罚量均超上年全年水平
+                                        <a href="javascript:;">东城区持续推进老旧柴油货车淘汰更新，累计检查和处罚量均超上年全年水平</a>
                                     </span>
                                     <span class="time">
                                         2019-12-08

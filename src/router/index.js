@@ -7,20 +7,21 @@ const routes = [
     path: '/',
     name: 'home',
     component: () => import('../views/Index'),
+    redirect: 'index',
     children: [
       {
-        path: '',
+        path: 'index',
         name: 'index',
         component: () => import('../views/Home')
       },
       {
-        path: '/special',
+        path: 'special',
         name: 'special',
         component: () => import('../views/Special')
       },
       {
-        path: '/Interaction',
-        name: 'Interaction',
+        path: 'interaction',
+        name: 'interaction',
         component: () => import('../views/Interaction')
       }
     ]
