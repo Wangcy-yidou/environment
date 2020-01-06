@@ -108,19 +108,22 @@ export default {
     }
     main {
         width: 100%;
+        height: calc(100vh - 100px - 140px);
         background-image: linear-gradient(#bd1a2d, #fff, #fff);
         .mainBox {
             position: relative;
             width: 1355px;
             height: 100%;
             margin: 0 auto;
+            overflow: auto;
+            &::-webkit-scrollbar {display:none}
             .mainNav {
                 border-left: 1px solid #bd1a2d;
-                position: absolute;
-                top: 0;
-                right: -1px;
+                position: fixed;
+                top: 10.6%;
+                right: 15.3%;
                 width: 160px;
-                height: 100%;
+                height: 697px;
                 background-color: #f1f1f1;
                 ul {
                     padding: 0;
@@ -166,6 +169,8 @@ export default {
         }
     }
     #footer {
+        position: absolute;
+        bottom: 0;
         height: 140px;
     }
 </style>
