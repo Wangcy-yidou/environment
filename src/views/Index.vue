@@ -38,14 +38,18 @@
                             <div></div>
                             <span></span>
                         </li>
-                        <li>
-                            <div></div>
-                            <span></span>
-                        </li>
-                        <li>
-                            <div></div>
-                            <span></span>
-                        </li>
+                        <router-link to="Interaction">
+                            <li>
+                                <div><a-icon type="message" /></div>
+                                <span>政民互动</span>
+                            </li>
+                        </router-link>
+                        <router-link to="Special">
+                            <li>
+                                <div><a-icon type="snippets" /></div>
+                                <span>专题专栏</span>
+                            </li>
+                        </router-link>
                     </ul>
                 </div>
             </div>

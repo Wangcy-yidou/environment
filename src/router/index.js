@@ -12,6 +12,16 @@ const routes = [
         path: '',
         name: 'index',
         component: () => import('../views/Home')
+      },
+      {
+        path: '/special',
+        name: 'special',
+        component: () => import('../views/Special')
+      },
+      {
+        path: '/Interaction',
+        name: 'Interaction',
+        component: () => import('../views/Interaction')
       }
     ]
   }
