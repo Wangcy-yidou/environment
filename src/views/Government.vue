@@ -135,7 +135,7 @@
                                 <div class="circle" style="background-color: #d5a843;">
                                     <a-icon type="audit" />
                                 </div>
-                                <span style="color: #886619;font-weight: 700;">机构职能</span>
+                                <span style="color: #d5a843;font-weight: 700;">机构职能</span>
                             </div>
                         </a-col>
                         <a-col :span="6" style="height: 100%;position: relative;">

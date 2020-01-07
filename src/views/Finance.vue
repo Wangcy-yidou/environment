@@ -364,7 +364,7 @@
                     .spot {
                         margin-left: 2%;
                         position: absolute;
-                        top: 28.7%;
+                        top: 20px;
                         left: 0%;
                         display: inline-block;
                         width: 5px;
@@ -401,7 +401,7 @@
                     .spot {
                         margin-left: 2%;
                         position: absolute;
-                        top: 28.7%;
+                        top: 20px;
                         left: 0%;
                         display: inline-block;
                         width: 5px;
