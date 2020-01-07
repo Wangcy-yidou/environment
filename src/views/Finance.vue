@@ -32,6 +32,86 @@
                 </div>
             </div>
         </div>
+        <div class="finance_right">
+            <div class="rightBottom">
+                <div class="box">
+                    <div class="content">
+                        <div class="text">
+                            <span>环保项目管理</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="content">
+                        <div class="text">
+                            <span>
+                                机动车排放
+                            </span>
+                            <span>
+                                检验机构
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="content">
+                        <div class="text">
+                            <span>
+                                固体废物产生
+                            </span>
+                            <span>
+                                单位管理
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="content">
+                        <div class="text">
+                            <span>
+                                固体废物处置
+                            </span>
+                            <span>
+                                利用单位管理
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="content">
+                        <div class="text">
+                            <span>
+                                行政复议
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="content">
+                        <div class="text">
+                            <span>
+                                环境污染损害
+                            </span>
+                            <span>
+                                赔偿纠纷解调
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="content">
+                        <div class="text">
+                            <span>
+                                强制性清洁生产
+                            </span>
+                            <span>
+                                审核单位管理
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </template>
 <style lang="scss" scope>
@@ -42,6 +122,7 @@
         .finance_left{
             float: left;
             width: 30%;
+            margin-right: 3%;
             .fin_img{
                 width: 100%;
                 display: inline-block;
@@ -56,6 +137,8 @@
                     width: 100%;
                     font-size: 17px;
                     .defa_color{
+                        cursor: pointer;
+                        position: relative;
                         float: left;
                         width: 47%;
                         height: 54px;
@@ -64,14 +147,14 @@
                         border-left: 5px #d6d6d6 solid;
                         background-color: #eaeaea;
                         margin-bottom: 19px;
-                        position: relative;
                         &:nth-child(2n) {
                             float: right;
                         }
                         span{
                             position: absolute;
-                            top: 0px;
-                            left: 23px;
+                            top: 50%;
+                            left: 50%;
+                            transform: translateX(-50%) translateY(-50%);
                             width: 70%;
                             display: inline-block;
                             text-align: center;
@@ -170,6 +253,61 @@
                 }
 
             } 
+        }
+        .finance_right {
+            width: 67%;
+            float: left;
+            .rightBottom {
+                width: 100%;
+                height: 135px;
+                .box {
+                    cursor: pointer;
+                    position: relative;
+                    width: 11%;
+                    height: 135px;
+                    margin-right: 3%;
+                    float: left;
+                    border: 1px solid #d8d8d8;
+                    &:last-child {
+                        margin-right: 0;
+                    }
+                    &:hover {
+                        border-color: #bb1d31;
+                        .content {
+                            border-color: #bb1d31;
+                            background-color: #bb1d31;
+                            color: #fff;
+                        }
+                    }
+                    .content {
+                        position: absolute;
+                        top: -5px;
+                        left: -5px;
+                        width: 100%;
+                        height: 100%;
+                        background-color: #eaeaea;
+                        border: 1px solid #d8d8d8;
+                        .text {
+                            position: absolute;
+                            top: 50%;
+                            left: 50%;
+                            transform: translateY(-50%) translateX(-50%);
+                            width: 20%;
+                            line-height: 1.1;
+                            span {
+                                position: absolute;
+                                top: 50%;
+                                transform: translateY(-50%);
+                                display: inline-block;
+                                width: 10px;
+                                &:nth-child(2) {
+                                    left: 100%;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
     .clearfix:after{/*伪元素是行内元素 正常浏览器清除浮动方法*/
