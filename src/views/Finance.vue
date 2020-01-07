@@ -32,6 +32,76 @@
                 </div>
             </div>
         </div>
+        <div class="fin_right">
+            <a-tabs defaultActiveKey="1">
+                <a-tab-pane tab="污染防治攻坚战" key="1">
+                    <ul class="ul_left">
+                        <li>
+                            <span class="spot"></span>
+                            <span class="title">
+                                北京市生态环境局关于实施国六机动车排放标准有关事项的通
+                            </span>
+                        </li>
+                        <li>
+                            <span class="spot"></span>
+                            <span class="title">
+                            关于《北京市生态环境系统行政处罚 自由裁量基准》的解读
+                            </span>
+                        </li>
+                        <li>
+                            <span class="spot"></span>
+                            <span class="title">
+                                北京市生态环境局通报10月16日-31日乡镇（街道）大气粗颗粒物浓度排名
+                            </span>
+                        </li>
+                        <li>
+                            <span class="spot"></span>
+                            <span class="title">
+                                北京市生态环境局关于对北京金隅红树林环保技术有限责任公司危险废物跨省转
+                            </span>
+                        </li>
+                        <li>
+                            <span class="spot"></span>
+                            <span class="title">
+                                北京市生态环境局关于对北京金隅红树林环保技术有限责任公司危险废物跨省转
+                            </span>
+                        </li>
+                    </ul>
+                    <ul class="ul_right">
+                        <li>
+                            <span class="spot"></span>
+                            <span class="title">
+                                北京市生态环境局关于实施国六机动车排放标准有关事项的通
+                            </span>
+                        </li>
+                        <li>
+                            <span class="spot"></span>
+                            <span class="title">
+                            关于《北京市生态环境系统行政处罚 自由裁量基准》的解读
+                            </span>
+                        </li>
+                        <li>
+                            <span class="spot"></span>
+                            <span class="title">
+                                北京市生态环境局通报10月16日-31日乡镇（街道）大气粗颗粒物浓度排名
+                            </span>
+                        </li>
+                        <li>
+                            <span class="spot"></span>
+                            <span class="title">
+                                北京市生态环境局关于对北京金隅红树林环保技术有限责任公司危险废物跨省转
+                            </span>
+                        </li>
+                        <li>
+                            <span class="spot"></span>
+                            <span class="title">
+                                北京市生态环境局关于对北京金隅红树林环保技术有限责任公司危险废物跨省转
+                            </span>
+                        </li>
+                    </ul>
+                </a-tab-pane>
+            </a-tabs>
+        </div>
     </div>
 </template>
 <style lang="scss" scope>
@@ -79,6 +149,7 @@
                         }
                     }
                     .defa_color:hover{
+                        cursor: pointer;
                         background-color: #bb1e31;
                         color: #fff;
                         border: #bb1e31 1px solid;
@@ -109,6 +180,7 @@
                         }
                     }
                     .defa_color:hover{
+                        cursor: pointer;
                         background-color: #bb1e31;
                         color: #fff;
                         border: #bb1e31 1px solid;
@@ -162,6 +234,7 @@
                         }
                     }
                     .fin:hover{
+                        cursor: pointer;
                         background-color: #bb1e31;
                         color: #fff;
                         border: #bb1e31 1px solid;
@@ -170,6 +243,104 @@
                 }
 
             } 
+        }
+        .fin_right {
+            width: 67%;
+            float: right;
+            .ant-tabs-bar{
+                margin: 0 0 6px 0
+            }
+            .ul_left{
+                float: left;
+                list-style: none;
+                display: inline-block;
+                width: 48%;
+                height: 450px;
+                margin-bottom: 1.5em;
+                li {
+                    position: relative;
+                    padding: 10px;
+                    width: 100%;
+                    &:nth-child(2n) {
+                        background-color: #f0f0f0;
+                    }
+                    .spot {
+                        margin-left: 2%;
+                        position: absolute;
+                        top: 28.7%;
+                        left: 0%;
+                        display: inline-block;
+                        width: 5px;
+                        height: 5px;
+                        border-radius: 50%;
+                        background-color: #333;
+                    }
+                    .title {
+                        display: inline-block;
+                        margin-left: 3.5%;
+                        width: 90%;
+                        left: 25px;
+                        font-size: 16px;
+                        word-break: break-all; 
+                        word-wrap: break-word;
+
+                    }
+                }
+            }
+            .ul_right{
+                float: right;
+                list-style: none;
+                display: inline-block;
+                width: 48%;
+                height: 450px;
+                margin-bottom: 1.5em;
+                li {
+                    position: relative;
+                    padding: 10px;
+                    width: 100%;
+                    &:nth-child(2n) {
+                        background-color: #f0f0f0;
+                    }
+                    .spot {
+                        margin-left: 2%;
+                        position: absolute;
+                        top: 28.7%;
+                        left: 0%;
+                        display: inline-block;
+                        width: 5px;
+                        height: 5px;
+                        border-radius: 50%;
+                        background-color: #333;
+                    }
+                    .title {
+                        display: inline-block;
+                        margin-left: 3.5%;
+                        width: 90%;
+                        left: 25px;
+                        font-size: 16px;
+                        word-break: break-all; 
+                        word-wrap: break-word;
+
+                    }
+                }
+            }
+            .ant-tabs-nav-container {
+                line-height: 1;
+            }
+            .ant-tabs-nav .ant-tabs-tab {
+                color: #333;
+                font-weight: 700;
+                font-size: 24px;
+                padding: 0 16px 12px;
+            }
+            .ant-tabs-nav .ant-tabs-tab-active {
+                color: #bd1a2d;
+                font-weight: 700;
+                font-size: 24px;
+            }
+            .ant-tabs-ink-bar {
+                background-color: #bd1a2d;
+            }
         }
     }
     .clearfix:after{/*伪元素是行内元素 正常浏览器清除浮动方法*/

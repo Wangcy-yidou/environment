@@ -128,12 +128,8 @@
                 .ant-tabs-bar{
                     margin: 0 0 6px 0
                 }
-                img{
-                    width:100%; 
-                    margin-top: 5px;
-                }
                 ul {
-                margin-bottom: 1.5em;
+                    margin-bottom: 1.5em;
                     li {
                         position: relative;
                         height: calc(250px / 6);
