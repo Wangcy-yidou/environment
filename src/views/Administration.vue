@@ -6,57 +6,8 @@
             </div>
             <div class="admin_defa">
                 <a-tabs defaultActiveKey="1">
-                    <a-tab-pane tab="污染防治攻坚战" key="1">
+                    <a-tab-pane tab="咨询答复" key="1">
                         <ul>
-                            <li>
-                                <span class="spot"></span>
-                                <span class="title">
-                                    北京市生态环境局关于实施国六机动车排放标准有关事项的通
-                                </span>
-                                <span class="time">
-                                    2019-12-08
-                                </span>
-                            </li>
-                            <li>
-                                <span class="spot"></span>
-                                <span class="title">
-                                关于《北京市生态环境系统行政处罚 自由裁量基准》的解读
-                                </span>
-                                <span class="time">
-                                    2019-12-08
-                                </span>
-                            </li>
-                            <li>
-                                <span class="spot"></span>
-                                <span class="title">
-                                    北京市生态环境局通报10月16日-31日乡镇（街道）大气粗颗粒物浓度排名
-                                </span>
-                                <span class="time">
-                                    2019-12-08
-                                </span>
-                            </li>
-                            <li>
-                                <span class="spot"></span>
-                                <span class="title">
-                                    北京市生态环境局关于对北京金隅红树林环保技术有限责任公司危险废物跨省转
-                                </span>
-                                <span class="time">
-                                    2019-12-08
-                                </span>
-                            </li>
-                        </ul>
-                    </a-tab-pane>
-                    <a-tab-pane tab="生态保护" key="2" forceRender>
-                        <ul>
-                            <li>
-                                <span class="spot"></span>
-                                <span class="title">
-                                    北京市生态环境局关于实施 国六机动车排放标准有关事项的通知
-                                </span>
-                                <span class="time">
-                                    2019-12-08
-                                </span>
-                            </li>
                             <li>
                                 <span class="spot"></span>
                                 <span class="title">
@@ -69,7 +20,7 @@
                             <li>
                                 <span class="spot"></span>
                                 <span class="title">
-                                    北京市生态环境局通报10月16日-31日乡镇（街道）大气粗颗粒物浓度排名
+                                    北京市生态环境局关于发布 《 建设项目环境影响评价分类
                                 </span>
                                 <span class="time">
                                     2019-12-08
@@ -78,7 +29,38 @@
                             <li>
                                 <span class="spot"></span>
                                 <span class="title">
-                                    北京市生态环境局关于对北京金隅红树林环保技术有限责任公司危险废物跨省转
+                                    关于拟对北京晋味畅餐饮有限公司第一分公司涉嫌饮食服务
+                                </span>
+                                <span class="time">
+                                    2019-12-08
+                                </span>
+                            </li>
+                        </ul>
+                    </a-tab-pane>
+                    <a-tab-pane tab="生态保护" key="2" forceRender>
+                        <ul>
+                                                        <li>
+                                <span class="spot"></span>
+                                <span class="title">
+                                    关于拟对首都儿科研究所附属儿童医院涉嫌超标排放水污染物进行重大处罚一案
+                                </span>
+                                <span class="time">
+                                    2019-12-08
+                                </span>
+                            </li>
+                            <li>
+                                <span class="spot"></span>
+                                <span class="title">
+                                    北京市生态环境局关于发布 《 建设项目环境影响评价分类
+                                </span>
+                                <span class="time">
+                                    2019-12-08
+                                </span>
+                            </li>
+                            <li>
+                                <span class="spot"></span>
+                                <span class="title">
+                                    关于拟对北京晋味畅餐饮有限公司第一分公司涉嫌饮食服务
                                 </span>
                                 <span class="time">
                                     2019-12-08
@@ -90,10 +72,10 @@
             </div>
             <div class="admin_defa">
                 <a-tabs defaultActiveKey="1">
-                    <a-tab-pane tab="污染防治攻坚战" key="1">
+                    <a-tab-pane tab="访谈回顾" key="1">
                         <img src="@/assets/images/admin_one_w.jpg" alt="">
                     </a-tab-pane>
-                    <a-tab-pane tab="生态保护" key="2" forceRender>
+                    <a-tab-pane tab="意见征集" key="2" forceRender>
                         <img src="@/assets/images/admin_one_w.jpg" alt="">
                     </a-tab-pane>
                 </a-tabs>
@@ -115,11 +97,11 @@
             display: inline-block;
             .admin_img_4{
                 width: 100%;
-                height: 207px;
+                height: 265px;
                 margin-bottom: 29px;
                 img{
                     width: 100%;
-                    height: 207px;
+                    height: 265px;
                 }
             }
             .admin_defa {
