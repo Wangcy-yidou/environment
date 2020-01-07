@@ -18,58 +18,38 @@
                     <ul>
                         <router-link to="index">
                             <li :class="{active: $route.name === 'index'}">
-                                <div>
-                                    <a-icon type="home" />
-                                </div>
-                                <span>
-                                    首页
-                                </span>
+                                <div><a-icon type="home" /></div>
+                                <span>首页</span>
                             </li>
                         </router-link>
                         <router-link to="">
                             <li>
-                                <div>
-                                    <a-icon type="star" />
-                                </div>
-                                <span>
-                                    政务公开
-                                </span>
+                                <div><a-icon type="star" /></div>
+                                <span>政务公开</span>
                             </li>
                         </router-link>
                         <router-link to="">
                             <li>
-                                <div>
-                                    <a-icon type="heart" />
-                                </div>
-                                <span>
-                                    财政服务
-                                </span>
+                                <div><a-icon type="heart" /></div>
+                                <span>财政服务</span>
                             </li>
                         </router-link>
-                        <router-link to="">
-                            <li>
-                                <div>
-                                    <a-icon type="message" />
-                                </div>
-                                <span>
-                                    政民互动
-                                </span>
-                            </li>
-                        </router-link>
-                        <router-link to="">
-                            <li>
-                                <div>
-                                    <a-icon type="rest" />
-                                </div>
-                                <span>
-                                    环境质量
-                                </span>
-                            </li>
-                        </router-link>
-                        <router-link to="interaction">
-                            <li :class="{active: $route.name === 'interaction'}">
+                        <router-link to="administration">
+                            <li :class="{active: $route.name === 'administration'}">
                                 <div><a-icon type="message" /></div>
                                 <span>政民互动</span>
+                            </li>
+                        </router-link>
+                        <router-link to="science">
+                            <li :class="{active: $route.name === 'science'}">
+                                <div><a-icon type="rest" /></div>
+                                <span>环境质量</span>
+                            </li>
+                        </router-link>
+                        <router-link to="quality">
+                            <li :class="{active: $route.name === 'quality'}">
+                                <div><a-icon type="pic-left" /></div>
+                                <span>环境管理</span>
                             </li>
                         </router-link>
                         <router-link to="special">

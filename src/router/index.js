@@ -20,9 +20,19 @@ const routes = [
         component: () => import('../views/Special')
       },
       {
-        path: 'interaction',
-        name: 'interaction',
-        component: () => import('../views/Interaction')
+        path: 'quality',
+        name: 'quality',
+        component: () => import('../views/Quality')
+      },
+      {
+        path: 'science',
+        name: 'science',
+        component: () => import('../views/Science')
+      },
+      {
+        path: 'administration',
+        name: 'administration',
+        component: () => import('../views/Administration')
       }
     ]
   }
