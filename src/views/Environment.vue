@@ -22,12 +22,12 @@
                 </span>
             </div>
             <div class="content">
-                <img v-if="active === 1" src="@/assets/images/atmosphericenvironment.png" style="height: 100%;width: 100%;">
-                <img v-if="active === 2" src="@/assets/images/waterEnvironment.png" style="height: 100%;width: 100%;">
-                <img v-if="active === 3" src="@/assets/images/Soundenvironment.png" style="height: 100%;width: 100%;">
-                <img v-if="active === 4" src="@/assets/images/Radiationenvironment.png" style="height: 100%;width: 100%;">
-                <img v-if="active === 5" src="@/assets/images/ecologicalenvironment.png" style="height: 100%;width: 100%;">
-                <img v-if="active === 6" src="@/assets/images/Environmentalquality.png" style="height: 100%;width: 100%;">
+                <img v-if="active === 1" src="@/assets/images/atmosphericenvironment.png" style="margin-top: 10px;height: 100%;width: 100%;">
+                <img v-if="active === 2" src="@/assets/images/waterEnvironment.png" style="margin-top: 10px;height: 100%;width: 100%;">
+                <img v-if="active === 3" src="@/assets/images/Soundenvironment.png" style="margin-top: 10px;height: 100%;width: 100%;">
+                <img v-if="active === 4" src="@/assets/images/Radiationenvironment.png" style="margin-top: 10px;height: 100%;width: 100%;">
+                <img v-if="active === 5" src="@/assets/images/ecologicalenvironment.png" style="margin-top: 10px;height: 100%;width: 100%;">
+                <img v-if="active === 6" src="@/assets/images/Environmentalquality.png" style="margin-top: 10px;height: 100%;width: 100%;">
             </div>
         </div>
     </div>
