@@ -3,7 +3,7 @@
         <!-- 头部 -->
         <div class="top">
             <div class="content">
-                <img src="@/assets/images/top_text.jpg">
+                <img src="@/assets/images/top_text.jpg" style="height: 80%;;">
                 <a-input-search placeholder="请输入关键字" style="margin-left: 150px;width: 500px;height: 50px;" @search="onSearch" />
                 <img src="@/assets/images/top_logo.jpg" style="margin-left: 165px;">
             </div>
