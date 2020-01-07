@@ -1,10 +1,10 @@
 <template>
     <div class="special">
         <div class="special1" >
-            <img src="@/assets/images/special1.jpg" alt="">
+            <img src="@/assets/images/special1.jpg">
         </div>
         <div class="special2">
-            <img src="@/assets/images/special2.jpg" alt="">
+            <img src="@/assets/images/special2.jpg">
         </div>
     </div>
 </template>

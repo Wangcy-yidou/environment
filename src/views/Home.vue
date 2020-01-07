@@ -183,7 +183,7 @@
                 </div>
             </div>
             <div class="bottom">
-                <img src="@/assets/images/home_footer.jpg">
+                <img src="@/assets/images/home_footer.png">
             </div>
         </div>
     </div>
@@ -196,14 +196,14 @@
         .top {
             overflow: hidden;
             margin-bottom: 20px;
-            height: 349px;
+            height: 298.5px;
             img {
                 float: left;
-                margin-right: 20px;
+                margin-right: 30px;
             }
             /deep/
             .tab {
-                width: calc(100% - 399px);
+                width: calc(100% - 409px);
                 height: 100%;;
                 float: left;
                 ul {
@@ -265,7 +265,8 @@
             }
         }
         .bottom {
-            height: calc(100% - 300px)
+            // height: calc(100% - 300px)
+            height: 298.5px;
         }
     }
 </style>

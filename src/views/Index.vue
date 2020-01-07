@@ -12,7 +12,7 @@
         <main>
             <div class="mainBox">
                 <div class="mianContent">
-                    <router-view style="width: 1195px;height: 100%;background-color: #fff;" />
+                    <router-view style="width: 1299px;height: 100%;background-color: #fff;" />
                 </div>
                 <div class="mainNav">
                     <ul>
@@ -107,7 +107,7 @@ export default {
         height: 100px;
         background-color: #bd1a2d;
         .content {
-            width: 1355px;
+            width: 1460px;
             height: 100%;
             margin: 0 auto;
             .ant-input-search {
@@ -133,7 +133,7 @@ export default {
             position: absolute;
             left: 50%;
             transform: translateX(-50%);
-            width: 1355px;
+            width: 1460px;
             height: 100%;
             .mianContent {
                 height: 100%;
