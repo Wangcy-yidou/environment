@@ -16,14 +16,11 @@
                 </div>
                 <div class="mainNav">
                     <ul>
-                        <router-link to="index">
-                            <li :class="{active: $route.name === 'index'}">
-                                <div><a-icon type="home" /></div>
-                                <span>首页</span>
-                            </li>
-                        </router-link>
-                        <router-link to="government">
-                            <li :class="{active: $route.name === 'government'}">
+                        <li :class="{active: $route.name === 'index2'}" @click="go('index2')" @mouseenter="go('index2')">
+                            <div><a-icon type="home" /></div>
+                            <span>首页</span>
+                        </li>
+                            <li :class="{active: $route.name === 'government2'}" @click="go('government2')" @mouseenter="go('government2')">
                                 <div>
                                     <a-icon type="star" />
                                 </div>
@@ -31,21 +28,15 @@
                                     政务公开
                                 </span>
                             </li>
-                        </router-link>
-                        <router-link to="finance">
-                            <li :class="{active: $route.name === 'finance'}">
+                            <li :class="{active: $route.name === 'finance2'}" @click="go('finance')" @mouseenter="go('finance2')">
                                 <div><a-icon type="heart" /></div>
                                 <span>政务服务</span>
                             </li>
-                        </router-link>
-                        <router-link to="administration">
-                            <li :class="{active: $route.name === 'administration'}">
+                            <li :class="{active: $route.name === 'administration2'}" @click="go('administration2')" @mouseenter="go('administration2')">
                                 <div><a-icon type="message" /></div>
                                 <span>政民互动</span>
                             </li>
-                        </router-link>
-                        <router-link to="environment">
-                            <li :class="{active: $route.name === 'environment'}">
+                            <li :class="{active: $route.name === 'environment2'}" @click="go('environment2')" @mouseenter="go('environment2')">
                                 <div>
                                     <a-icon type="rest" />
                                 </div>
@@ -53,19 +44,14 @@
                                     环境质量
                                 </span>
                             </li>
-                        </router-link>
-                        <router-link to="quality">
-                            <li :class="{active: $route.name === 'quality'}">
+                            <li :class="{active: $route.name === 'quality2'}" @click="go('quality2')" @mouseenter="go('quality2')">
                                 <div><a-icon type="pic-left" /></div>
                                 <span>环境管理</span>
                             </li>
-                        </router-link>
-                        <router-link to="special">
-                            <li :class="{active: $route.name === 'special'}">
+                            <li :class="{active: $route.name === 'special2'}" @click="go('special2')" @mouseenter="go('special2')">
                                 <div><a-icon type="snippets" /></div>
                                 <span>专题专栏</span>
                             </li>
-                        </router-link>
                     </ul>
                 </div>
             </div>
@@ -86,6 +72,11 @@ export default {
     methods: {
         onSearch (value) {
             console.log(value);
+        },
+        go (name) {
+            this.$router.push({
+                name: name
+            });
         }
     }
 }
@@ -123,6 +114,7 @@ export default {
             transform: translateX(-50%);
             width: 1460px;
             height: 100%;
+            background-color: #ac1325;
             .mianContent {
                 height: 100%;
                 overflow: auto;
@@ -135,7 +127,7 @@ export default {
                 // right: 15.3%;
                 position: absolute;
                 top: 0;
-                right: -1px;
+                right: 0px;
                 width: 160px;
                 height: 697px;
                 background-color: #f1f1f1;
@@ -143,41 +135,40 @@ export default {
                     padding: 0;
                     margin: 0;
                     height: 100%;
-                    a {
-                        &:last-child li {
+                    li {
+                        &:last-child {
                             border-bottom: none;
                         }
-                        li {
-                            list-style: none;
-                            position: relative;
-                            float: left;
-                            width: 100%;
-                            height: calc(100% / 7);
-                            border-bottom: 1px solid #c6c6c6;
-                            color: #bd1a2d;
-                            text-align: center;
-                            font-size: 26px;
-                            div {
-                                margin-top: 10px;
-                            }
-                            span {
-                                font-size: 20px;
-                            }
+                        cursor: pointer;
+                        list-style: none;
+                        position: relative;
+                        float: left;
+                        width: 100%;
+                        height: calc(100% / 7);
+                        border-bottom: 1px solid #c6c6c6;
+                        color: #bd1a2d;
+                        text-align: center;
+                        font-size: 26px;
+                        div {
+                            margin-top: 10px;
                         }
-                        .active {
-                            background-color: #ac1325;
-                            color: #fff;
-                            &::before {
-                                content: '';
-                                position: absolute;
-                                left: -80px;
-                                width: 0;
-                                height: 0;
-                                border-top: 50px solid transparent;
-                                border-right: 30px solid #ac1325;
-                                border-bottom: 50px solid transparent;
-                                border-left: 50px solid transparent;
-                            }
+                        span {
+                            font-size: 20px;
+                        }
+                    }
+                    .active {
+                        background-color: #ac1325;
+                        color: #fff;
+                        &::before {
+                            content: '';
+                            position: absolute;
+                            left: -80px;
+                            width: 0;
+                            height: 0;
+                            border-top: 50px solid transparent;
+                            border-right: 30px solid #ac1325;
+                            border-bottom: 50px solid transparent;
+                            border-left: 50px solid transparent;
                         }
                     }
                 }
