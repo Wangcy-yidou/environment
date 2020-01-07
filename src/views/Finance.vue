@@ -34,7 +34,7 @@
         </div>
         <div class="finance_right">
             <a-tabs defaultActiveKey="1">
-                <a-tab-pane tab="污染防治攻坚战" key="1">
+                <a-tab-pane tab="政务服务事项清单" key="1">
                     <ul class="ul_left">
                         <li>
                             <span class="spot"></span>
@@ -64,6 +64,12 @@
                             <span class="spot"></span>
                             <span class="title">
                                 北京市生态环境局关于对北京金隅红树林环保技术有限责任公司危险废物跨省转
+                            </span>
+                        </li>
+                        <li>
+                            <span class="spot"></span>
+                            <span class="title">
+                                北京市生态环境局关于对北京
                             </span>
                         </li>
                     </ul>
@@ -200,14 +206,13 @@
             .fin_img{
                 width: 100%;
                 display: inline-block;
-                margin-bottom: 24px;
+                margin-bottom: 5px;
                 img{
                     width: 100%;
-                    height: 200px;
                 }
             }
             .fin_defa{
-                height: 314px;
+                height: 298px;
                 .defa{
                     width: 100%;
                     font-size: 17px;
@@ -216,12 +221,12 @@
                         position: relative;
                         float: left;
                         width: 47%;
-                        height: 45px;
+                        height: 49px;
                         display: inline-block;
                         border: #d6d6d6 1px solid;
                         border-left: 5px #d6d6d6 solid;
                         background-color: #eaeaea;
-                        margin-bottom: 19px;
+                        margin-bottom: 15px;
                         &:nth-child(2n) {
                             float: right;
                         }
@@ -290,7 +295,7 @@
                 .ant-tabs-nav .ant-tabs-tab-active {
                     color: #bd1a2d;
                     font-weight: 700;
-                    font-size: 24px;
+                    font-size: 20px;
                 }
                 .ant-tabs-ink-bar {
                     background-color: #bd1a2d;
@@ -419,11 +424,12 @@
             .ant-tabs-nav-container {
                 line-height: 1;
             }
+            /deep/
             .ant-tabs-nav .ant-tabs-tab {
                 color: #333;
                 font-weight: 700;
                 font-size: 24px;
-                padding: 0 16px 12px;
+                padding: 0 16px 10px;
             }
             .ant-tabs-nav .ant-tabs-tab-active {
                 color: #bd1a2d;

@@ -129,13 +129,105 @@
             </div>
             <div class="right">
                 <div class="rightTop">
-                    <a-row style="height: calc(100% / 3);" :gutter="60" v-for="item in 3" :key="item ">
-                        <a-col :span="6" style="height: 100%;position: relative;" v-for="item in 4" :key="item">
+                    <a-row style="height: calc(100% / 3);" :gutter="60">
+                        <a-col :span="6" style="height: 100%;position: relative;">
                             <div style="position: absolute;left: 50%;top: 50%;transform: translateY(-50%) translateX(-50%);text-align: center;font-size: 16px;">
-                                <div class="circle">
+                                <div class="circle" style="background-color: #d5a843;">
                                     <a-icon type="audit" />
                                 </div>
                                 <span style="color: #886619;font-weight: 700;">机构职能</span>
+                            </div>
+                        </a-col>
+                        <a-col :span="6" style="height: 100%;position: relative;">
+                            <div style="position: absolute;left: 50%;top: 50%;transform: translateY(-50%) translateX(-50%);text-align: center;font-size: 16px;">
+                                <div class="circle" style="background-color: #8cbf55;">
+                                    <a-icon type="user" />
+                                </div>
+                                <span style="color: #8cbf55;font-weight: 700;">领导简介</span>
+                            </div>
+                        </a-col>
+                        <a-col :span="6" style="height: 100%;position: relative;">
+                            <div style="position: absolute;left: 50%;top: 50%;transform: translateY(-50%) translateX(-50%);text-align: center;font-size: 16px;">
+                                <div class="circle" style="background-color: #4f96d7;">
+                                    <a-icon type="bars" />
+                                </div>
+                                <span style="color: #4f96d7;font-weight: 700;">权责清单</span>
+                            </div>
+                        </a-col>
+                        <a-col :span="6" style="height: 100%;position: relative;">
+                            <div style="position: absolute;left: 50%;top: 50%;transform: translateY(-50%) translateX(-50%);text-align: center;font-size: 16px;">
+                                <div class="circle" style="background-color: #d064af;">
+                                    <a-icon type="file-text" />
+                                </div>
+                                <span style="color: #d064af;font-weight: 700;">月报年报</span>
+                            </div>
+                        </a-col>
+                    </a-row>
+                    <a-row style="height: calc(100% / 3);" :gutter="60">
+                        <a-col :span="6" style="height: 100%;position: relative;">
+                            <div style="position: absolute;left: 50%;top: 50%;transform: translateY(-50%) translateX(-50%);text-align: center;font-size: 16px;">
+                                <div class="circle" style="background-color: #42c699;">
+                                    <a-icon type="book" />
+                                </div>
+                                <span style="color: #42c699;font-weight: 700;">法律文件</span>
+                            </div>
+                        </a-col>
+                        <a-col :span="6" style="height: 100%;position: relative;">
+                            <div style="position: absolute;left: 50%;top: 50%;transform: translateY(-50%) translateX(-50%);text-align: center;font-size: 16px;">
+                                <div class="circle" style="background-color: #887bce;">
+                                    <a-icon type="file-text" />
+                                </div>
+                                <span style="color: #887bce;font-weight: 700;">标准文本</span>
+                            </div>
+                        </a-col>
+                        <a-col :span="6" style="height: 100%;position: relative;">
+                            <div style="position: absolute;left: 50%;top: 50%;transform: translateY(-50%) translateX(-50%);text-align: center;font-size: 16px;">
+                                <div class="circle" style="background-color: #d54e4d;">
+                                    <a-icon type="star" />
+                                </div>
+                                <span style="color: #d54e4d;font-weight: 700;">年度重点工作</span>
+                            </div>
+                        </a-col>
+                        <a-col :span="6" style="height: 100%;position: relative;">
+                            <div style="position: absolute;left: 50%;top: 50%;transform: translateY(-50%) translateX(-50%);text-align: center;font-size: 16px;">
+                                <div class="circle" style="background-color: #b05dcc;">
+                                    <a-icon type="credit-card" />
+                                </div>
+                                <span style="color: #b05dcc;font-weight: 700;">规划计划</span>
+                            </div>
+                        </a-col>
+                    </a-row>
+                    <a-row style="height: calc(100% / 3);" :gutter="60">
+                        <a-col :span="6" style="height: 100%;position: relative;">
+                            <div style="position: absolute;left: 50%;top: 50%;transform: translateY(-50%) translateX(-50%);text-align: center;font-size: 16px;">
+                                <div class="circle" style="background-color: #c4c641;">
+                                    <a-icon type="file-search" />
+                                </div>
+                                <span style="color: #c4c641;font-weight: 700;">招考信息</span>
+                            </div>
+                        </a-col>
+                        <a-col :span="6" style="height: 100%;position: relative;">
+                            <div style="position: absolute;left: 50%;top: 50%;transform: translateY(-50%) translateX(-50%);text-align: center;font-size: 16px;">
+                                <div class="circle" style="background-color: #62c3bd;">
+                                    <a-icon type="dollar" />
+                                </div>
+                                <span style="color: #62c3bd;font-weight: 700;">财政信息</span>
+                            </div>
+                        </a-col>
+                        <a-col :span="6" style="height: 100%;position: relative;">
+                            <div style="position: absolute;left: 50%;top: 50%;transform: translateY(-50%) translateX(-50%);text-align: center;font-size: 16px;">
+                                <div class="circle" style="background-color: #ee8596;">
+                                    <a-icon type="contacts" />
+                                </div>
+                                <span style="color: #ee8596;font-weight: 700;">行政执法公示</span>
+                            </div>
+                        </a-col>
+                        <a-col :span="6" style="height: 100%;position: relative;">
+                            <div style="position: absolute;left: 50%;top: 50%;transform: translateY(-50%) translateX(-50%);text-align: center;font-size: 16px;">
+                                <div class="circle" style="background-color: #e7923d;">
+                                    <a-icon type="switcher" />
+                                </div>
+                                <span style="color: #e7923d;font-weight: 700;">双公示信息</span>
                             </div>
                         </a-col>
                     </a-row>
@@ -293,15 +385,18 @@ ul {
             height: 56%;
             margin-bottom: 4.5%;
             .circle {
-                width: 70px;
-                height: 70px;
+                width: 65px;
+                height: 65px;
+                margin: 0 auto;
                 margin-bottom: 10px;
-                background-color: #d5a843;
                 border-radius: 50%;
                 text-align: center;
-                line-height: 70px;
+                line-height: 65px;
                 color: #fff;
                 font-size: 28px;
+            }
+            span {
+                white-space: nowrap;
             }
         }
         .rightBottom {

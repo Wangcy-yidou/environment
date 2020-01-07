@@ -23,7 +23,7 @@
             </div>
             <div class="content">
                 <img v-if="active === 1" src="@/assets/images/atmosphericenvironment.png" style="height: 100%;width: 100%;">
-                <img v-if="active === 2" src="@/assets/images/waterEnvironment.png" style="height: 100%;width: 100%;">
+                <img v-if="active === 2" src="@/assets/images/Soundenvironment.png" style="height: 100%;width: 100%;">
                 <img v-if="active === 3" src="@/assets/images/Soundenvironment.png" style="height: 100%;width: 100%;">
                 <img v-if="active === 4" src="@/assets/images/Radiationenvironment.png" style="height: 100%;width: 100%;">
                 <img v-if="active === 5" src="@/assets/images/ecologicalenvironment.png" style="height: 100%;width: 100%;">
