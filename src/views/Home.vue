@@ -2,7 +2,7 @@
     <div>
         <div class="box">
             <div class="top">
-                <img src="@/assets/images/home_left.jpg">
+                <img src="@/assets/images/home_left.jpg" style="height: 100%;width: 379px;">
                 <div class="tab">
                     <a-tabs defaultActiveKey="1">
                         <a-tab-pane tab="新闻发布" key="1">
@@ -184,6 +184,15 @@
             </div>
             <div class="bottom">
                 <img src="@/assets/images/home_footer.png">
+                <!-- <div>
+                    <img src="@/assets/images/home_footer_01.png">
+                </div>
+                <div>
+                    <img src="@/assets/images/home_footer_02.png">
+                </div>
+                <div>
+                    <img src="@/assets/images/home_footer_03.png">
+                </div> -->
             </div>
         </div>
     </div>
@@ -196,7 +205,7 @@
         .top {
             overflow: hidden;
             margin-bottom: 20px;
-            height: 298.5px;
+            height: 318.5px;
             img {
                 float: left;
                 margin-right: 30px;
@@ -209,7 +218,7 @@
                 ul {
                     li {
                         position: relative;
-                        height: calc(298px / 6);
+                        height: calc(267px / 6);
                         line-height: 49px;
                         padding: 10px;
                         &:nth-child(2n) {
@@ -265,8 +274,20 @@
             }
         }
         .bottom {
+            overflow: hidden;
             // height: calc(100% - 300px)
-            height: 298.5px;
+            height: 278.5px;
+            div {
+                float: left;
+                width: 379px;
+                height: 100%;
+                background-color: #ff4949;
+                margin-right: 30px;
+                &:last-child { margin-right: 0; }
+                img {
+                    height: 100%;
+                }
+            }
         }
     }
 </style>

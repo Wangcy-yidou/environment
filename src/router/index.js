@@ -14,10 +14,22 @@ const routes = [
         name: 'index',
         component: () => import('../views/Home')
       },
+      // 政务公开
+      {
+        path: 'government',
+        name: 'government',
+        component: () => import('../views/Government')
+      },
       {
         path: 'special',
         name: 'special',
         component: () => import('../views/Special')
+      },
+      // 环境质量
+      {
+        path: 'environment',
+        name: 'environment',
+        component: () => import('../views/Environment')
       },
       {
         path: 'interaction',

@@ -26,8 +26,8 @@
                                 </span>
                             </li>
                         </router-link>
-                        <router-link to="">
-                            <li>
+                        <router-link to="government">
+                            <li :class="{active: $route.name === 'government'}">
                                 <div>
                                     <a-icon type="star" />
                                 </div>
@@ -56,8 +56,8 @@
                                 </span>
                             </li>
                         </router-link>
-                        <router-link to="">
-                            <li>
+                        <router-link to="environment">
+                            <li :class="{active: $route.name === 'environment'}">
                                 <div>
                                     <a-icon type="rest" />
                                 </div>
