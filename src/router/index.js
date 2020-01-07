@@ -33,6 +33,11 @@ const routes = [
         path: 'administration',
         name: 'administration',
         component: () => import('../views/Administration')
+      },
+      {
+        path: 'finance',
+        name: 'finance',
+        component: () => import('../views/Finance')
       }
     ]
   }

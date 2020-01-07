@@ -94,7 +94,7 @@
                         <img src="@/assets/images/admin_one_w.jpg" alt="">
                     </a-tab-pane>
                     <a-tab-pane tab="生态保护" key="2" forceRender>
-
+                        <img src="@/assets/images/admin_one_w.jpg" alt="">
                     </a-tab-pane>
                 </a-tabs>
             </div>

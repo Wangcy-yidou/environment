@@ -28,10 +28,10 @@
                                 <span>政务公开</span>
                             </li>
                         </router-link>
-                        <router-link to="">
-                            <li>
+                        <router-link to="finance">
+                            <li :class="{active: $route.name === 'finance'}">
                                 <div><a-icon type="heart" /></div>
-                                <span>财政服务</span>
+                                <span>政务服务</span>
                             </li>
                         </router-link>
                         <router-link to="administration">
