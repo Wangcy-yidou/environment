@@ -18,12 +18,8 @@
                     <ul>
                         <router-link to="index">
                             <li :class="{active: $route.name === 'index'}">
-                                <div>
-                                    <a-icon type="home" />
-                                </div>
-                                <span>
-                                    首页
-                                </span>
+                                <div><a-icon type="home" /></div>
+                                <span>首页</span>
                             </li>
                         </router-link>
                         <router-link to="government">
@@ -36,24 +32,16 @@
                                 </span>
                             </li>
                         </router-link>
-                        <router-link to="">
-                            <li>
-                                <div>
-                                    <a-icon type="heart" />
-                                </div>
-                                <span>
-                                    财政服务
-                                </span>
+                        <router-link to="finance">
+                            <li :class="{active: $route.name === 'finance'}">
+                                <div><a-icon type="heart" /></div>
+                                <span>政务服务</span>
                             </li>
                         </router-link>
-                        <router-link to="">
-                            <li>
-                                <div>
-                                    <a-icon type="message" />
-                                </div>
-                                <span>
-                                    政民互动
-                                </span>
+                        <router-link to="administration">
+                            <li :class="{active: $route.name === 'administration'}">
+                                <div><a-icon type="message" /></div>
+                                <span>政民互动</span>
                             </li>
                         </router-link>
                         <router-link to="environment">
@@ -66,10 +54,10 @@
                                 </span>
                             </li>
                         </router-link>
-                        <router-link to="interaction">
-                            <li :class="{active: $route.name === 'interaction'}">
-                                <div><a-icon type="message" /></div>
-                                <span>政民互动</span>
+                        <router-link to="quality">
+                            <li :class="{active: $route.name === 'quality'}">
+                                <div><a-icon type="pic-left" /></div>
+                                <span>环境管理</span>
                             </li>
                         </router-link>
                         <router-link to="special">

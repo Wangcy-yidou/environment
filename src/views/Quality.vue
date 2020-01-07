@@ -488,13 +488,18 @@
         height: 100%;
         padding: 40px;
         box-sizing: border-box;
+
         .words {
             width: calc(100% /2);
             float: left;
+            .ant-tabs-bar{
+                margin: 0 0 6px 0
+            }
             ul {
+            margin-bottom: 2em;
                 li {
                     position: relative;
-                    height: calc(298px / 6);
+                    height: calc(254px / 6);
                     line-height: 49px;
                     padding: 10px;
                     &:nth-child(2n) {
@@ -551,10 +556,14 @@
         .words_right {
             width: calc(100% /2.1);
             float: right;
+            .ant-tabs-bar{
+                margin: 0 0 6px 0
+            }
             ul {
+            margin-bottom: 2em;
                 li {
                     position: relative;
-                    height: calc(298px / 6);
+                    height: calc(254px / 6);
                     line-height: 49px;
                     padding: 10px;
                     &:nth-child(2n) {
