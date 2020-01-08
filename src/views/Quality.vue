@@ -2,6 +2,7 @@
     <div class="interaction">
         <div class="words">
             <a-tabs defaultActiveKey="1">
+                <a slot="tabBarExtraContent" href="javascript:;" style="">查看更多></a>
                 <a-tab-pane tab="污染防治攻坚战" key="1">
                     <ul>
                         <li>
@@ -122,6 +123,7 @@
         </div>
         <div class="words_right">
             <a-tabs defaultActiveKey="1" >
+                <a slot="tabBarExtraContent" href="javascript:;" style="">查看更多></a>
                 <a-tab-pane tab="污染源管理" key="1">
                     <ul>
                         <li>
@@ -242,6 +244,7 @@
         </div>
         <div class="words">
             <a-tabs defaultActiveKey="1" >
+                <a slot="tabBarExtraContent" href="javascript:;" style="">查看更多></a>
                 <a-tab-pane tab="监察执法" key="1">
                     <ul>
                         <li>
@@ -362,6 +365,7 @@
         </div>
         <div class="words_right">
             <a-tabs defaultActiveKey="1">
+                <a slot="tabBarExtraContent" href="javascript:;" style="">查看更多></a>
                 <a-tab-pane tab="国际合作与应对气候变化" key="1">
                     <ul>
                         <li>
@@ -617,6 +621,17 @@
                 background-color: #bd1a2d;
             }
         }
-
+        /deep/
+        .ant-tabs-bar {
+            position: relative;
+            .ant-tabs-extra-content {
+                position: absolute;
+                right: 0;
+                bottom: 0;
+                a {
+                    color: #333;
+                }
+            }
+        }
     }
 </style>

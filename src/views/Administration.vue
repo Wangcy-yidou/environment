@@ -6,6 +6,7 @@
             </div>
             <div class="admin_defa">
                 <a-tabs defaultActiveKey="1">
+                    <a slot="tabBarExtraContent" href="javascript:;" style="">查看更多></a>
                     <a-tab-pane tab="咨询答复" key="1">
                         <ul>
                             <li>
@@ -176,6 +177,18 @@
             img{
                 width: 100%;
                 height: 640px;
+            }
+        }
+        /deep/
+        .ant-tabs-bar {
+            position: relative;
+            .ant-tabs-extra-content {
+                position: absolute;
+                right: 0;
+                bottom: 0;
+                a {
+                    color: #333;
+                }
             }
         }
     }

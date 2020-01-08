@@ -179,6 +179,7 @@
                                 </li>
                             </ul>
                         </a-tab-pane>
+                        <a slot="tabBarExtraContent" href="javascript:;" style="">查看更多></a>
                     </a-tabs>
                 </div>
             </div>
@@ -254,6 +255,18 @@
                             font-size: 18px;
                             display: inline-block;
                             width: 15%;
+                        }
+                    }
+                }
+                /deep/
+                .ant-tabs-bar {
+                    position: relative;
+                    .ant-tabs-extra-content {
+                        position: absolute;
+                        right: 0;
+                        bottom: 0;
+                        a {
+                            color: #333;
                         }
                     }
                 }

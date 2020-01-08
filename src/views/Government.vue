@@ -4,6 +4,7 @@
             <div class="left">
                 <div class="leftTop">
                     <a-tabs defaultActiveKey="1">
+                        <a slot="tabBarExtraContent" href="javascript:;" style="">查看更多></a>
                         <a-tab-pane tab="政策与解读" key="1">
                             <ul>
                                 <li>
@@ -66,6 +67,7 @@
                 </div>
                 <div class="leftBottom">
                     <a-tabs defaultActiveKey="1">
+                        <a slot="tabBarExtraContent" href="javascript:;" style="">查看更多></a>
                         <a-tab-pane tab="通知公告" key="1">
                             <ul>
                                 <li>
@@ -289,6 +291,18 @@
     </div>
 </template>
 <style lang="scss" scoped>
+/deep/
+.ant-tabs-bar {
+    position: relative;
+    .ant-tabs-extra-content {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        a {
+            color: #333;
+        }
+    }
+}
 ul {
     li {
         position: relative;
